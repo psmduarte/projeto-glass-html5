@@ -5,6 +5,7 @@
     <title>Tudo sobre Google Glass!</title>
     <link rel="stylesheet" type="text/css" href ="_css/estilo.css">
 </head>
+<script language="JavaScript" src="_javascript/funcoes.js"></script>
 <body>
 <div id="interface">
     <header id="cabecalho">
@@ -13,15 +14,14 @@
             <h2>A revolução do Google está a chegar</h2>
         </hgroup>
         <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
-
         <nav id="menu">
             <h1>Menu Principal</h1>
             <ul type="circle">
-                <li>Home</li>
-                <li>Especificações</li>
-                <li>Fotos</li>
-                <li>Multimédia</li>
-                <li>Fale conosco</li>
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html"> Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html"> Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html"> Multimédia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html"> Fale conosco</a></li>
             </ul>
         </nav>
     </header>
