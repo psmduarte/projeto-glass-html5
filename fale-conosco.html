@@ -47,13 +47,27 @@
 <fieldset id="endereco"><legend> Endereço do Usuário</legend>
    <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Travessa"></p>
     <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="9999"></p>
-    <p><label for="cEst">Estado:</label></p>
-    <p><label for="cCid">Cidade:</label></p>
+    <p><label for="cDist">Distrito:</label>
+    <select name="tDist" id="cDist">
+        <option>Lisboa</option>
+        <option selected>Portalegre</option>
+        <option>Porto</option>
+        <option>Faro</option>
+    </select></p>
+    <p><label for="cCid">Cidade:</label>
+    <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Tua cidade" list="cidades"></p>
+    <datalist id="cidades">
+        <option value="Ponte de Sor"></option>
+        <option value="Gavião"></option>
+        <option value="Nisa"></option>
+    </datalist>
 </fieldset>
 
 <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-    <p><label for="cUrg">Grau de Urgência</label>:</p>
-    <p><label for="cMsg">Mensagem:</label></p>
+    <p><label for="cUrg">Grau de Urgência</label>
+    Mín<input type="range" name="tURg" id="cUrg" min="0" max="10" step="2">Máx</p>
+    <p><label for="cMsg">Mensagem:</label>
+    <textarea name="cMsg" id="cMsg" cols="45" rows="5" placeholder="Escreve a tua mensagem"></textarea></p>
 </fieldset>
 
 <fieldset id="pedido"><legend>Quero um Google Glass</legend>
